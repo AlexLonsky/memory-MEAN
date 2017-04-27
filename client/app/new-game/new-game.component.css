@@ -1,0 +1,25 @@
+.header{
+    border-bottom: 4px solid #3e3e3e;
+    text-align: center;
+
+
+}
+.newGame{
+    position: absolute;
+    height: 49px;
+    background: #fff;
+    width: 105px;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 0px 0px 70px 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #3e3e3e;
+    border-top: 4px solid #3e3e3e;
+    cursor: pointer;
+    z-index: 106;
+}

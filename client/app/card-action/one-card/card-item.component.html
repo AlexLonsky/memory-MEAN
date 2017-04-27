@@ -1,0 +1,11 @@
+<div [ngSwitch]="appServise.lvl">
+    <div  *ngSwitchCase="1"  name="item" id="item"    class="card" (click)="cardClick()" [ngClass]="{flip:item.flipped}">
+        <div class="front "><span class="icon-magic-wand i-f"></span></div>
+        <div class="back"><span class='{{item.card}} i-b'></span></div>
+    </div>
+    <div  *ngSwitchCase="2"  name="item" id="item2"    class="card2" (click)="cardClick()" [ngClass]="{flip:item.flipped}">
+        <div class="front2 "><span class="icon-magic-wand i-f2"></span></div>
+        <div class="back2"><span class='{{item.card}} i-b2'></span></div>
+    </div>
+</div>
+

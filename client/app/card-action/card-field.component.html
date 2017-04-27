@@ -1,0 +1,33 @@
+<div class="wrapper" >
+
+    <card-item *ngFor="let item of cards; let i = index" [item]="item" [numberEl]="i"  ></card-item>
+</div>
+<div *ngIf="appServise.modal==2" class="modal">
+    <div class="modalMsg">
+        <div class="modalText">
+            <h1>Поздравляем Вы прошли 1 уровень!</h1>
+            <p>Вы набрали {{appServise.counterStep}}</p>
+        </div>
+        <button (click)="appServise.modalClose()"> Next lvl</button>
+    </div>
+</div>
+<div *ngIf="appServise.modal==3" class="modal">
+    <div class="modalMsg">
+        <div class="modalText">
+            <h1>Игра окончена!</h1>
+            <table *ngFor="let player of appServise.winnerPlayer let count = index">
+                <tr>
+                    <td>{{count + 1}}.</td>
+                    <td>{{player.name}}: </td>
+                    <td>{{player.score}}</td>
+                </tr>
+            </table>
+            <p>Вы набрали {{appServise.counterStep}}</p>
+            <form (submit)="saveNewRezult($event)" *ngIf="appServise.savePlayer==true">
+                <input type="text" [(ngModel)] = "newPlayer" name="newPlayer">
+                <button (click)="saveNewRezult($event)">Сохранить</button>
+            </form>
+        </div>
+        <button (click)="appServise.createNewGame()">Новая игра</button>
+    </div>
+</div>

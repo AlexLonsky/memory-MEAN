@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?nu7vw1');
+    src:  url('fonts/icomoon.eot?nu7vw1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?nu7vw1') format('truetype'),
+    url('fonts/icomoon.woff?nu7vw1') format('woff'),
+    url('fonts/icomoon.svg?nu7vw1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home2:before {
+    content: "\e901";
+}
+.icon-eyedropper:before {
+    content: "\e90a";
+}
+.icon-music:before {
+    content: "\e911";
+}
+.icon-pacman:before {
+    content: "\e916";
+}
+.icon-cart:before {
+    content: "\e93a";
+}
+.icon-user:before {
+    content: "\e971";
+}
+.icon-hour-glass:before {
+    content: "\e979";
+}
+.icon-wrench:before {
+    content: "\e991";
+}
+.icon-magic-wand:before {
+    content: "\e997";
+}
+.icon-rocket:before {
+    content: "\e9a5";
+}
+.icon-fire:before {
+    content: "\e9a9";
+}
